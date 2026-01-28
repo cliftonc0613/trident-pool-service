@@ -238,7 +238,7 @@ a {
    Hero Section
    ======================================== */
 .hero {
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1060,6 +1060,172 @@ a {
     font-size: 0.85rem;
     color: var(--text-secondary);
     margin-top: 0.5rem;
+}
+
+/* ========================================
+   Contact Cards - Standard Design
+   ======================================== */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(0, 180, 216, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.contact-card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 180, 216, 0.15);
+}
+
+.contact-card-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--ocean-deep), var(--aqua-primary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.contact-card-icon .material-icons {
+    color: white;
+    font-size: 28px;
+}
+
+.contact-card-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--ocean-deep);
+    margin-bottom: 0.5rem;
+}
+
+.contact-card-item p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.contact-card-item .card-action {
+    font-size: 0.85rem;
+    color: var(--aqua-primary);
+    margin-top: 0.5rem;
+    display: block;
+}
+
+/* Contact Details Grid */
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.business-hours,
+.why-choose-us {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 180, 216, 0.1);
+}
+
+.details-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--ocean-deep), var(--aqua-primary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.details-icon .material-icons {
+    color: white;
+    font-size: 24px;
+}
+
+.business-hours h3,
+.why-choose-us h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    color: var(--ocean-deep);
+    margin-bottom: 1rem;
+}
+
+.hours-list {
+    list-style: none;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 180, 216, 0.1);
+    color: var(--text-primary);
+}
+
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    color: var(--text-primary);
+}
+
+.benefits-list li .material-icons {
+    color: var(--aqua-primary);
+    font-size: 20px;
+}
+
+/* Facebook Button */
+.contact-social {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-facebook {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #1877F2;
+    color: white;
+    padding: 0.875rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-facebook:hover {
+    background: #166fe5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+}
+
+.btn-facebook svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 /* ========================================

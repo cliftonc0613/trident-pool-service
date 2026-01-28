@@ -249,71 +249,94 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2>Let's Talk Pools</h2>
-                    <p>Have questions? Ready to schedule service? We're here to help. Reach out anytime — we respond fast.</p>
-                    
-                    <div class="contact-methods">
-                        <a href="tel:8649402250" class="contact-method">
-                            <div class="method-icon"><span class="material-icons">phone</span></div>
-                            <div class="method-details">
-                                <strong>Call Us</strong>
-                                <span>(864) 940-2250</span>
-                            </div>
-                        </a>
-                        <a href="https://facebook.com/TridentPoolServiceLLC" target="_blank" rel="noopener" class="contact-method">
-                            <div class="method-icon"><span class="material-icons">facebook</span></div>
-                            <div class="method-details">
-                                <strong>Facebook</strong>
-                                <span>Message us anytime</span>
-                            </div>
-                        </a>
-                        <div class="contact-method">
-                            <div class="method-icon"><span class="material-icons">location_on</span></div>
-                            <div class="method-details">
-                                <strong>Service Area</strong>
-                                <span>Anderson, SC & Surrounding Areas</span>
-                            </div>
-                        </div>
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Let's Talk Pools</h2>
+                <p>Have questions? Ready to schedule service? We're here to help. Reach out anytime — we respond fast.</p>
+            </div>
+            
+            <!-- Contact Cards -->
+            <div class="contact-cards">
+                <a href="tel:8649402250" class="contact-card-item">
+                    <div class="contact-card-icon">
+                        <span class="material-icons">phone</span>
                     </div>
-                </div>
-                <div class="contact-card">
-                    <div class="card-header">
-                        <h3>Request a Free Quote</h3>
-                        <p>Tell us about your pool and we'll get back to you ASAP.</p>
+                    <h3>Call Us</h3>
+                    <p>(864) 940-2250</p>
+                    <span class="card-action">Tap to call</span>
+                </a>
+                
+                <a href="mailto:info@tridentpoolservice.com" class="contact-card-item">
+                    <div class="contact-card-icon">
+                        <span class="material-icons">email</span>
                     </div>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Smith">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(864) 555-1234">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service" required>
-                                <option value="">Select a service...</option>
-                                <option value="cleaning">One-Time Cleaning</option>
-                                <option value="weekly">Weekly Maintenance</option>
-                                <option value="repair">Repair / Equipment Issue</option>
-                                <option value="other">Other / Not Sure</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Tell Us More (Optional)</label>
-                            <textarea id="message" name="message" rows="3" placeholder="Pool size, any issues, best time to call..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            Send Request
-                            <span class="btn-arrow">→</span>
-                        </button>
-                        <p class="form-note">We'll call you back within 24 hours, usually much sooner!</p>
-                    </form>
+                    <h3>Email Us</h3>
+                    <p>info@tridentpoolservice.com</p>
+                    <span class="card-action">Send a message</span>
+                </a>
+                
+                <div class="contact-card-item">
+                    <div class="contact-card-icon">
+                        <span class="material-icons">location_on</span>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Anderson, SC</p>
+                    <span class="card-action">Serving the Upstate</span>
                 </div>
+            </div>
+            
+            <!-- Business Hours & Why Choose Us -->
+            <div class="contact-details">
+                <div class="business-hours">
+                    <div class="details-icon">
+                        <span class="material-icons">schedule</span>
+                    </div>
+                    <h3>Business Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday - Friday</span><span>8:00 AM - 6:00 PM</span></li>
+                        <li><span>Saturday</span><span>9:00 AM - 3:00 PM</span></li>
+                        <li><span>Sunday</span><span>Closed</span></li>
+                    </ul>
+                </div>
+                
+                <div class="why-choose-us">
+                    <div class="details-icon">
+                        <span class="material-icons">pool</span>
+                    </div>
+                    <h3>Why Choose Trident Pool Service?</h3>
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="material-icons">check</span>
+                            <span>Family-owned and operated</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">check</span>
+                            <span>Licensed and fully insured</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">check</span>
+                            <span>Free, no-obligation estimates</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">check</span>
+                            <span>100% satisfaction guaranteed</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">check</span>
+                            <span>Fast, reliable service</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="contact-social">
+                <a href="https://www.facebook.com/TridentPoolService/" target="_blank" class="btn-facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span>Facebook</span>
+                </a>
             </div>
         </div>
     </section>
